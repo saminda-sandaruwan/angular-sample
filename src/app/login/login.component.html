@@ -1,0 +1,8 @@
+<p>login works!</p>
+<div class="login">
+    <form [formGroup]="loginform" (ngSubmit)="appLogin()">
+        <input type="text" placeholder="username" formControlName="UserName">
+        <input type="password" placeholder="Password" formControlName="Password">
+        <button [disabled]="loginform.invalid" type="submit" >Submit</button>
+    </form>
+</div>
